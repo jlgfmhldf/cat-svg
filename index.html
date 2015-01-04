@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+    <style>
+        svg{
+            width: 30%;
+            height: 30%;
+            margin: 100px auto 0;
+            display: block;
+            min-width: 300px;
+            cursor: pointer;
+            stroke-width: 3px;
+        }
+        
+        path{
+            fill: rgb(34, 36, 87);
+            fill: none;
+            stroke: rgb(145, 155, 226);
+            stroke-dasharray: 821;
+            stroke-dashoffset: 0;
+            stroke-width: 3px;
+            -webkit-animation: cat 5s linear forwards;
+            -moz-animation: cat 5s linear forwards;
+            -o-animation: cat 5s linear forwards;
+            animation: cat 5s linear forwards;
+        }
+
+        body{   
+            background: rgb(17, 17, 45);
+        }
+
+        @-webkit-keyframes cat {
+            from{
+                stroke-dashoffset: 821;
+            }
+
+            to{
+                stroke-dashoffset: 0;
+                
+                
+            }
+        }
+
+        @keyframes cat {
+            from{
+                stroke-dashoffset: 821;
+            }
+
+            to{
+                stroke-dashoffset: 0;
+                
+                
+            }
+        }
+
+        svg:hover .eye{
+            fill: rgb(183, 67, 122);
+            transition: .9s;
+        }
+
+        .muzzle{
+            -webkit-animation: cat 1.5s linear forwards;
+            -moz-animation: cat 1.5s linear forwards;
+            -o-animation: cat 1.5s linear forwards;
+            animation: cat 1.5s linear forwards;
+        }
+
+
+    </style>
+</head>
+<body>
+    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             viewBox="0 0 298 294" enable-background="new 0 0 298 294" xml:space="preserve">
+        <path  class="muzzle" stroke-miterlimit="10" d="M291.3,180.7c0,72.3-61.8,102.6-139.9,102.6
+            S8.2,253.1,8.2,180.7c0-41,24.6-73.7,24.6-73.7c1.8-2.5,4.8-6.6,9-11.2c12.9-14.2,28-24,42.7-30.8c31.9-14.7,62.2-15.2,65.2-15.2
+            c10.3,0,34.4-0.7,60.3,12.5C251,83,291.3,127.2,291.3,180.7z"/>
+        <path  stroke-miterlimit="10" d="M210.7,62.7c23.2-39.9,48-60.3,62-54.7
+            c15.7,6.3,6.2,58.7-4.7,102"/>
+        <path  stroke="#CC6440" stroke-miterlimit="10" d="M28.7,113.3c-13-88.5-17-99-4.7-101.7
+            C34.7,9.3,61.4-2.9,92,61.3"/>
+        <path  class="eye"  stroke-miterlimit="10" d="M84,131.3c0,3.7,3,6.7,6.7,6.7c3.7,0,6.7-3,6.7-6.7"
+            />
+        <path  class="eye"   stroke-miterlimit="10" d="M189,130.3c0,3.7,3,6.7,6.7,6.7c3.7,0,6.7-3,6.7-6.7
+            "/>
+        <path stroke-miterlimit="10" d="M144.7,195.3c-15.3,39.7-43.6,57.8-58.7,52
+            c-11.8-4.5-17.7-24.5-17.3-46"/>
+        <path  stroke-miterlimit="10" d="M144.7,194.3c15.3,39.7,43.6,57.8,58.7,52
+            c11.8-4.5,17.7-24.5,17.3-46"/>
+    </svg>
+
+</body>
+</html>
+
